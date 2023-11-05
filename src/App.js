@@ -1,18 +1,14 @@
-import React from 'react'
-import TemplateContent from './template/TemplateContent'
-import TemplateHeader from './template/TemplateHeader'
-import TemplateNavbar from './template/TemplateNavbar'
-import TemplateFooter from './template/TemplateFooter'
-
+import ArraySample from "./jsx/ArraySample"
+import ArrayTableSample from "./jsx/ArrayTableSample"
+import Intro from "./jsx/Intro"
 
 
 function App() {
-  
+
   return (<>
-    <TemplateNavbar/>
-    <TemplateHeader/>  
-    <TemplateContent/>
-    <TemplateFooter/>
+
+    <ArrayTableSample />
+
 
   </>
 
