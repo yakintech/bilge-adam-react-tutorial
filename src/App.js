@@ -1,13 +1,19 @@
 import React from 'react'
-import SiteHeader from './components/SiteHeader'
-import SiteContent from './components/SiteContent'
-import SiteFooter from './components/SiteFooter'
+import TemplateContent from './template/TemplateContent'
+import TemplateHeader from './template/TemplateHeader'
+import TemplateNavbar from './template/TemplateNavbar'
+import TemplateFooter from './template/TemplateFooter'
+
+
 
 function App() {
+  
   return (<>
-      <SiteHeader></SiteHeader>
-      <SiteContent></SiteContent>
-      <SiteFooter></SiteFooter>
+    <TemplateNavbar/>
+    <TemplateHeader/>  
+    <TemplateContent/>
+    <TemplateFooter/>
+
   </>
 
   )
