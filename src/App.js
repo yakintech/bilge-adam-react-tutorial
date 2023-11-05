@@ -1,5 +1,6 @@
 import Box from "./props/Box"
 import CategoryTable from "./props/CategoryTable"
+import Films from "./props/Films"
 import Products from "./props/Products"
 import UserDetail from "./props/UserDetail"
 
@@ -51,12 +52,13 @@ function App() {
 
 
   return (<>
-    <Products />
+    <Films />
+    {/* <Products />
     <Box width={300} height={300} color='red'></Box>
     <Box width={200} height={100} color='yellow'></Box>
     <Box width={100} height={100} color='brown'></Box>
     <Box width={30} height={30} color='purple'></Box>
-    <Box />
+    <Box /> */}
 
     {/* <CategoryTable categories={categoryList} />
     <hr></hr>
