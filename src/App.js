@@ -3,6 +3,7 @@ import CategoryTable from "./props/CategoryTable"
 import Films from "./props/Films"
 import Products from "./props/Products"
 import UserDetail from "./props/UserDetail"
+import StateArraySample from "./state/StateArraySample"
 import StateBasicArraySample from "./state/StateBasicArraySample"
 import StateCssSample from "./state/StateCssSample"
 import StateCssSample2 from "./state/StateCssSample2"
@@ -56,7 +57,7 @@ function App() {
 
 
   return (<>
-    <StateCssSample2/>
+
     {/* <Products />
     <Box width={300} height={300} color='red'></Box>
     <Box width={200} height={100} color='yellow'></Box>
