@@ -1,0 +1,1 @@
+Ekrana 2 input, 4 işlem butonu ve sonucu göreceğim bir h1 koy. Hangi işlem butonuna tıklarsam ona göre hesaplama yapsın. ( HESAP MAKİNASI )
