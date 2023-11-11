@@ -9,6 +9,8 @@ import StateBasicArraySample from "./state/StateBasicArraySample"
 import StateCssSample from "./state/StateCssSample"
 import StateCssSample2 from "./state/StateCssSample2"
 import StateCssSample3 from "./state/StateCssSample3"
+import StateInputSample from "./state/StateInputSample"
+import StateInputSample2 from "./state/StateInputSample2"
 
 
 
@@ -59,7 +61,7 @@ function App() {
 
 
   return (<>
-  <StateArraySample2/>
+  <StateInputSample2/>
     {/* <Products />
     <Box width={300} height={300} color='red'></Box>
     <Box width={200} height={100} color='yellow'></Box>
