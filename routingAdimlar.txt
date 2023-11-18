@@ -1,0 +1,6 @@
+1) react-router-dom paketini yükle
+npm install react-router-dom 
+
+2) BrowserRouter index.js de sarmallanır
+
+3) Routes içerisine route lar tek tek belirlenir
