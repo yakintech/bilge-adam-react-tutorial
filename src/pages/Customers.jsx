@@ -6,28 +6,30 @@ function Customers() {
 
     const [customers, setcustomers] = useState(customersData)
 
+    const [companyName, setcompanyName] = useState("")
+    const [contactName, setcontactName] = useState("")
+    const [contactTitle, setContactTitle] = useState("")
+
 
     const removeCustomer = (id) => {
 
         var isDelete = window.confirm("Are you sure?");
 
-        if(isDelete){
+        if (isDelete) {
             var filteredCustomers = customers.filter(q => q.id != id);
             setcustomers(filteredCustomers)
         }
-      
+
     }
 
     const search = (value) => {
-        
+
         var searchData = value.toLowerCase()
-
         var filteredCustomers = customersData.filter(q => q.companyName.toLowerCase().includes(searchData))
-
         setcustomers(filteredCustomers)
 
     }
-    
+
     return (<>
         <button onClick={() => setcustomers([])}>Empty</button>
         <h4>Length: {customers.length}</h4>
@@ -37,6 +39,32 @@ function Customers() {
         <div>
             <label htmlFor="">Search</label>
             <input type="text" onChange={(e) => search(e.target.value)} />
+        </div>
+        <hr />
+        <div>
+            <div>
+                <label htmlFor="">Company Name</label>
+                <input type="text" onChange={(e) => setcompanyName(e.target.value)} />
+            </div>
+            <div>
+                <label htmlFor="">Contact Name</label>
+                <input type="text" onChange={(e) => setcontactName(e.target.value)} />
+            </div>
+            <div>
+                <label htmlFor="">Contact Title</label>
+                <input type="text" onChange={(e) => setContactTitle(e.target.value)} />
+            </div>
+            <div>
+                <button onClick={() => {
+                    var newCustomer = {
+                        id: customers.length + 1,
+                        companyName: companyName,
+                        contactName: contactName,
+                        contactTitle: contactTitle
+                    }
+                    setcustomers([...customers, newCustomer])
+                }}>Add</button>
+            </div>
         </div>
         <table>
             <thead>
@@ -55,7 +83,7 @@ function Customers() {
 
                         let color = ''
                         if (item.address?.country == "Spain") {
-                             color = 'red'
+                            color = 'red'
                         }
 
                         return <tr style={{ backgroundColor: color }}>
@@ -78,3 +106,17 @@ function Customers() {
 }
 
 export default Customers
+
+
+// check my number value is empty or not AND is number or not
+
+var data = 33
+
+if (data) {
+    console.log("not empty")
+}
+
+//check isNan
+if (!isNaN(data)) {
+    console.log("number")
+}
