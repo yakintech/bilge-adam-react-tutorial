@@ -8,6 +8,7 @@ import EffectSample from "./effect/EffectSample"
 import AxiosSample from "./effect/AxiosSample"
 import Users from "./pages/Users"
 import UserDetail from "./pages/UserDetail"
+import Films from "./pages/Films"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/customers'>Customers</Link></li>
         <li><Link to='/users'>Users</Link></li>
+        <li><Link to='/films'>Films</Link></li>
 
       </ul>
     </nav>
@@ -32,6 +34,7 @@ function App() {
       <Route path="/customers" element={<Customers />} />
       <Route path="/users" element={<Users />} />
       <Route path="/users/:id" element={<UserDetail />} />
+      <Route path="/films" element={<Films />} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
 
