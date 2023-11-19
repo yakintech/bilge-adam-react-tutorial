@@ -4,9 +4,13 @@ import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import NotFound from "./pages/NotFound"
 import Customers from "./pages/Customers"
+import EffectSample from "./effect/EffectSample"
+import AxiosSample from "./effect/AxiosSample"
 
 function App() {
 
+
+  return <AxiosSample/>
 
   return (<>
 
