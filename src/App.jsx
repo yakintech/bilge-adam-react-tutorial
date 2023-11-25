@@ -4,14 +4,15 @@ import AboutPage from "./pages/AboutPage"
 import ContactPage from "./pages/ContactPage"
 import NotFound from "./pages/NotFound"
 import Customers from "./pages/Customers"
-import EffectSample from "./effect/EffectSample"
-import AxiosSample from "./effect/AxiosSample"
 import Users from "./pages/Users"
 import UserDetail from "./pages/UserDetail"
 import Films from "./pages/Films"
 import Intro from "./mui/Intro"
 import GridSample from "./mui/GridSample"
 import DataGridSample from "./mui/DataGridSample"
+import ProductsPage from "./mui/ProductsPage"
+import ProductDetail from "./mui/ProductDetail"
+import UpdateProductPage from "./mui/UpdateProductPage"
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <li><Link to='/mui'>MUI Intro</Link></li>
         <li><Link to='/grid'>MUI Grid</Link></li>
         <li><Link to='/datagrid'>MUI Data Grid</Link></li>
+        <li><Link to='/products'>Products</Link></li>
         
 
       </ul>
@@ -44,6 +46,11 @@ function App() {
       <Route path="/mui" element={<Intro />} />
       <Route path="/grid" element={<GridSample />} />
       <Route path="/datagrid" element={<DataGridSample />} />
+      <Route path="/products" element={<ProductsPage />} />
+      <Route path="/products/:id" element={<ProductDetail />} />
+      <Route path="/products/update/:id" element={<UpdateProductPage />} />
+
+
 
       <Route path="*" element={<NotFound/>} />
     </Routes>
